@@ -19,6 +19,7 @@ import androidx.media3.common.util.UnstableApi
 import androidx.media3.effect.OverlayEffect
 import androidx.media3.effect.Presentation
 import androidx.media3.effect.TextOverlay as Media3TextOverlay
+import androidx.media3.effect.TextureOverlay
 import androidx.media3.transformer.Composition
 import androidx.media3.transformer.EditedMediaItem
 import androidx.media3.transformer.EditedMediaItemSequence
@@ -123,7 +124,7 @@ class Exporter(private val context: Context) {
         // Tamaño en píxeles sobre un lienzo de 1080x1920
         span.setSpan(AbsoluteSizeSpan(t.sizeSp * 3), 0, span.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         val overlay = Media3TextOverlay.createStaticTextOverlay(span)
-        return OverlayEffect(ImmutableList.of(overlay))
+        return OverlayEffect(ImmutableList.of<TextureOverlay>(overlay))
     }
 
     /** Copia el archivo a la galería (Movies/VerticalCut) y devuelve una descripción legible de dónde quedó. */
