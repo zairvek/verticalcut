@@ -1,0 +1,7 @@
+<resources>
+    <color name="vc_bg">#0E0F14</color>
+    <color name="vc_surface">#171922</color>
+    <color name="vc_accent">#7CFFB2</color>
+    <color name="vc_accent2">#FF7A59</color>
+    <color name="vc_text">#F3F4F8</color>
+</resources>

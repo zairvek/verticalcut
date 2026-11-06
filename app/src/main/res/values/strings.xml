@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VerticalCut</string>
+    <string name="new_project">Nuevo proyecto</string>
+    <string name="pick_video">Elegir video</string>
+    <string name="export">Exportar</string>
+    <string name="exporting">Exportando…</string>
+</resources>
